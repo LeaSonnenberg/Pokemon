@@ -13,4 +13,12 @@ public class ConsolenUI implements UI{
         String userInput = scanner.next();
         return userInput;
     }
+
+    @Override
+    public String displayPokemon(String pokemon) {
+        System.out.println(pokemon);
+        Scanner scanner = new Scanner(System.in);
+        String pokemonName = scanner.next();
+        return pokemonName;
+    }
 }

@@ -4,11 +4,10 @@ public class Pokemon {
 
     private String name;
     private String type;
+    private int health;
+    private int currentHealth;
 
-
-    public static void pokemon(String[] args){
-
-
+    public Pokemon(String name){
 
     }
 }
