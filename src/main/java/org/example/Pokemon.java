@@ -1,14 +1,15 @@
 package org.example;
 
 public class Pokemon {
-    public Pokemon(String name){
-    }
     private String name;
     private String type;
     private int health;
     private int currentHealth;
     private int attack;
     private int defense;
+    public Pokemon(String name){
+        this.name = name;
+    }
 
     public String getName() {
         return name;
