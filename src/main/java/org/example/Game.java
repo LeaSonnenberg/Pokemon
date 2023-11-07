@@ -6,5 +6,6 @@ public class Game {
         Player player = new Player(ui.getUserInput("Wie heißt du? "));
         Pokemon pokemon = new Pokemon(ui.displayPokemon("Wähle ein Pokemon aus: "));
         player.pokemonName();
+        System.out.println(player.pokemonName());
     }
 }
