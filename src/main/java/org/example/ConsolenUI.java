@@ -13,5 +13,6 @@ public class ConsolenUI implements UI{
         String userInput = scanner.next();
         return userInput;
 
+
     }
 }
