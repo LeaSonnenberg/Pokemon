@@ -1,6 +1,6 @@
 package org.example;
 import java.util.Arrays;
-import java.util.Scanner;
+
 public class Player {
     private String name;
 
@@ -10,7 +10,7 @@ public class Player {
         this.name = name;
     }
 
-    public String pokemonName(){
+    public String pokemonName(Pokemon pokemon){
         return Arrays.toString(pokemonName);
     }
 
@@ -18,4 +18,3 @@ public class Player {
         return name;
     }
 }
-
