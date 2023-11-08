@@ -1,5 +1,4 @@
 package org.example;
-import java.util.Arrays;
 
 public class Player {
     private String name;
@@ -10,8 +9,8 @@ public class Player {
         this.name = name;
     }
 
-    public String pokemonName(Pokemon pokemon){
-        return Arrays.toString(pokemonName);
+    public String[] pokemonName(Pokemon pokemon){
+        return pokemonName;
     }
 
     public String getName() {
