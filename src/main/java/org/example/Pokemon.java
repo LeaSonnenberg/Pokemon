@@ -1,14 +1,21 @@
 package org.example;
 
 public class Pokemon {
-    public Pokemon(String name){
-    }
+
     private String name;
     private String type;
-    private int health;
+    private int maxHealth;
     private int currentHealth;
     private int attack;
     private int defense;
+
+    public Pokemon(String name, String type, int maxHealth, int attack, int defense) {
+        this.name = name;
+        this.type = type;
+        this.maxHealth = maxHealth;
+        this.attack = attack;
+        this.defense = defense;
+    }
 
     public String getName() {
         return name;
@@ -18,8 +25,8 @@ public class Pokemon {
         return type;
     }
 
-    public int getHealth() {
-        return health;
+    public int getMaxHealth() {
+        return maxHealth;
     }
 
     public int getCurrentHealth() {

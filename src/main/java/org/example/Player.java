@@ -1,19 +1,24 @@
 package org.example;
 
 public class Player {
-    private String name;
+    private final String name;
+    private Pokemon pokemon;
 
-    private String[] pokemonName = {"Quapsel", "Abra", "Enton"};
+
 
     public Player(String name){
         this.name = name;
     }
 
-    public String[] pokemonName(Pokemon pokemon){
-        return pokemonName;
+    public Pokemon getPokemon(){
+        return pokemon;
     }
 
     public String getName() {
         return name;
+    }
+
+    public void setPokemon(Pokemon pokemon) {
+        this.pokemon = pokemon;
     }
 }

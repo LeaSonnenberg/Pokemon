@@ -6,13 +6,14 @@ public class Game {
 
     }
     public static void main (String[] args){
+        Pokemon pikachu = StarterPokemon.pikachu;
         UI ui = new ConsolenUI();
         Player player = new Player(ui.getUserInput("Wie heißt du? "));
-        System.out.print("Dein Name " );
-        Pokemon pokemon = new Pokemon(ui.displayPokemon("Wähle ein Pokemon aus (0 = Quapsel, 1 = Abra, 2 = Enton): "));
+        Player waehlePokemonAus = new Player(ui.getUserInput("Welches Pokemon möchtest du wählen? "));
+        player.setPokemon(pikachu);
+        ui.displayPokemon(pikachu);
 
-        player.pokemonName(pokemon);
-        System.out.println(player.pokemonName(pokemon));
+
     }
 }
 

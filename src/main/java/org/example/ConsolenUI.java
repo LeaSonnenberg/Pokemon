@@ -10,15 +10,11 @@ public class ConsolenUI implements UI{
     public String getUserInput(String frage) {
         System.out.println(frage);
         Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.next();
-        return userInput;
+        return scanner.next();
     }
 
     @Override
-    public String displayPokemon(String pokemon) {
-        System.out.println(pokemon);
-        Scanner scanner = new Scanner(System.in);
-        String pokemonName = scanner.next();
-        return pokemonName;
+    public void displayPokemon(Pokemon pokemon) {
+        System.out.println(pokemon.getName());
     }
 }
