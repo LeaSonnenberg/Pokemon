@@ -10,13 +10,16 @@ public class Game {
         Player player = new Player(ui.getUserInput("Wie heißt du? "));
         int waehlePokemonAus = Integer.parseInt(ui.getUserInput("Welches Pokemon möchtest du wählen? "));
         if (waehlePokemonAus == 0) {
-            System.out.println("Dein Pokemon ist " + StarterPokemon.duflor.getName());
+            System.out.println(player.getName() + " dein Pokemon ist " + StarterPokemon.duflor.getName());
+            player.setPokemon(StarterPokemon.duflor);
         }
         else if (waehlePokemonAus == 1){
-            System.out.println("Dein Pokemon ist " + StarterPokemon.flegmon.getName());
+            System.out.println(player.getName()+ " dein Pokemon ist " + StarterPokemon.flegmon.getName());
+            player.setPokemon(StarterPokemon.flegmon);
         }
         else if (waehlePokemonAus == 2){
-            System.out.println("Dein Pokemon ist " + StarterPokemon.zubat.getName());
+            System.out.println(player.getName() + " dein Pokemon ist " + StarterPokemon.zubat.getName());
+            player.setPokemon(StarterPokemon.zubat);
         }
         else {
             System.out.println("Ungültige Eingabe");

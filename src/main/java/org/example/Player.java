@@ -10,6 +10,7 @@ public class Player {
         this.name = name;
     }
 
+
     public Pokemon getPokemon() {
         return pokemon;
     }
