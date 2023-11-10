@@ -22,18 +22,4 @@ public class Player {
         this.pokemon = pokemon;
     }
 
-    public void waehlePokemonAus() {
-        if (waehlePokemonAus == 0) {
-            System.out.println("Dein Pokemon ist " + StarterPokemon.duflor);
-        }
-        else if (waehlePokemonAus == 1){
-            System.out.println("Dein Pokemon ist " + StarterPokemon.flegmon);
-        }
-        else if (waehlePokemonAus == 2){
-            System.out.println("Dein Pokemon ist " + StarterPokemon.zubat);
-        }
-        else {
-            System.out.println("Ungültige Eingabe");
-        }
-    }
 }

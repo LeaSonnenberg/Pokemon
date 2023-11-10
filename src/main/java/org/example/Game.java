@@ -6,11 +6,21 @@ public class Game {
 
     }
     public static void main (String[] args){
-        Pokemon duflor = StarterPokemon.duflor;
         UI ui = new ConsolenUI();
         Player player = new Player(ui.getUserInput("Wie heißt du? "));
-        Player waehlePokemonAus = new Player(ui.getUserInput("Welches Pokemon möchtest du wählen? "));
-        player.waehlePokemonAus();
+        int waehlePokemonAus = Integer.parseInt(ui.getUserInput("Welches Pokemon möchtest du wählen? "));
+        if (waehlePokemonAus == 0) {
+            System.out.println("Dein Pokemon ist " + StarterPokemon.duflor.getName());
+        }
+        else if (waehlePokemonAus == 1){
+            System.out.println("Dein Pokemon ist " + StarterPokemon.flegmon.getName());
+        }
+        else if (waehlePokemonAus == 2){
+            System.out.println("Dein Pokemon ist " + StarterPokemon.zubat.getName());
+        }
+        else {
+            System.out.println("Ungültige Eingabe");
+        }
     }
 }
 
