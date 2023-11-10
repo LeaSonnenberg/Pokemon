@@ -15,6 +15,6 @@ public class ConsolenUI implements UI{
 
     @Override
     public void displayPokemon(Pokemon pokemon) {
-        System.out.println(pokemon.getName());
+        System.out.println("Name: " + pokemon.getName() + ", Type: " + pokemon.getType() + ", Max. Health: " + pokemon.getMaxHealth() + ", Attack: " + pokemon.getAttack() + ", Defense: " + pokemon.getDefense());
     }
 }
