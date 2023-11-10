@@ -12,6 +12,8 @@ public class ConsolenUI implements UI{
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.next();
         return userInput;
+
+
     }
 
     @Override
