@@ -2,8 +2,6 @@ package org.example;
 
 public class Game {
 
-    private String deinPokemon;
-
     public void Game(UI ui) {
 
     }
